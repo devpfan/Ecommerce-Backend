@@ -15,9 +15,8 @@ public class RegistrationBody {
     private String email;
     @NotBlank
     @NotNull
-    @Min(6)
-    @Pattern(regexp = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{6,}$")
-    @Max(32)
+   @Pattern(regexp = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{6,}$")
+    @Size(min=6, max=32)
     private String password;
     @NotBlank
     @NotNull
