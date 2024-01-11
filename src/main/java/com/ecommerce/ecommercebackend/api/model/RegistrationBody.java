@@ -9,7 +9,7 @@ public class RegistrationBody {
     @NotNull
     @NotBlank
     private String userName;
-    @NotBlank
+
     @Email
     @NotNull
     private String email;
@@ -21,7 +21,7 @@ public class RegistrationBody {
     @NotBlank
     @NotNull
     private String firstName;
-    @NotBlank
+
     @NotNull
     private String lastName;
 
